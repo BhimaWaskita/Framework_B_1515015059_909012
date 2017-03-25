@@ -9,22 +9,19 @@ use App\dosen;
 
 class dosencontroller extends Controller
 {
-    //
-    public function awal()
-    {
-    	return "Hello dari dosencontroller";
+    public function awal(){
+    	return "Hello dari DosenController";
     }
-    public function tambah()
-    {
+    public function tambah(){
     	return $this->simpan();
     }
-    public function simpan()
-    {
+    public function simpan(){
     	$dosen = new dosen();
-    	$dosen->nama = 'Edy Fedora';
-    	$dosen->nip = '1';
-    	$dosen->pengguna_id = '1';
+    	$dosen->nama = "Hervandi Reza";
+    	$dosen->nip = "1515015076";
+    	$dosen->alamat = "Jalan. Slamet Riyadi";
+    	$dosen->pengguna_id = 2;
     	$dosen->save();
-    	return "Data Dengan Nama {$dosen->nama} Telah Disimpan";
+    	return "Data Dosen dengan Nama {$dosen->nama} telah disimpan";
     }
 }

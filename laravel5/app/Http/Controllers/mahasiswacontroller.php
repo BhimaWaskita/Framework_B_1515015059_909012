@@ -9,23 +9,19 @@ use App\mahasiswa;
 
 class mahasiswacontroller extends Controller
 {
-    //
-    public function awal()
-    {
-    	return "Hello dari mahasiswacontroller";
+    public function awal(){
+    	return "Hello dari MahasiswaController";
     }
-    public function tambah()
-    {
+    public function tambah(){
     	return $this->simpan();
     }
-    public function simpan()
-    {
+    public function simpan(){
     	$mahasiswa = new mahasiswa();
-    	$mahasiswa->nama = 'Mahathir Muhammad';
-    	$mahasiswa->nim = '1515015070';
-    	$mahasiswa->alamat = 'Jl. Pramuka 10';
-    	$mahasiswa->pengguna_id = '1';
+    	$mahasiswa->nama = "Reza Hervandi";
+    	$mahasiswa->nim = "1515015076";
+    	$mahasiswa->alamat = "Jalan. Slamet Riyadi";
+    	$mahasiswa->pengguna_id = 2;
     	$mahasiswa->save();
-    	return "Data Dengan Nama mahasiswa {$mahasiswa->nama} Telah Disimpan";
+    	return "Data Mahasiswa dengan Nama {$mahasiswa->nama} telah disimpan";
     }
 }
