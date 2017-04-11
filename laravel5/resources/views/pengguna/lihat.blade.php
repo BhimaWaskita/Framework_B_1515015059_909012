@@ -22,6 +22,7 @@
 				<td>{{ $pengguna->created_at }}</td>
 			</tr>
 			<tr>
+				<td class="col-xs-4">Diperbarui Tanggal</td>
 				<td class="col-xs-1">:</td>
 				<td>{{ $pengguna->updated_at }}</td>
 			</tr>

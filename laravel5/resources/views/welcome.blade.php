@@ -16,7 +16,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Times New Roman';
+                font-family: 'Lato';
             }
 
             .container {
@@ -31,14 +31,14 @@
             }
 
             .title {
-                font-size: 130px;
+                font-size: 96px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Kingsman <br> At Your Service</div>
+                <div class="title">STFU</div>
             </div>
         </div>
     </body>

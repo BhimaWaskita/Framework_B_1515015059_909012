@@ -2,16 +2,16 @@
 @section('container')
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<strong> Seluruh Data Pengguna </strong>
-		<a href="{{url('matakuliah/tambah')}}" class="btn btn-xs btn-primary pull-right"><i class = "fa fa-plus"></i> Pengguna </a>
+		<strong> Seluruh Data matakuliah </strong>
+		<a href="{{url('matakuliah/tambah')}}" class="btn btn-xs btn-primary pull-right"><i class = "fa fa-plus"></i> matakuliah </a>
 	<div class="clearfix"></div>
 	</div>
 	<table class="table">
 		<thead>
 			<tr>
 				<th> No. </th>
-				<th> Username </th>
-				<th> Matakuliah </th>
+				<th> Title </th>
+				<th> Keterangan </th>
 				<th> Aksi </th>
 			</tr>
 		</thead>
@@ -20,8 +20,8 @@
 			@foreach ($data as $matakuliah)
 				<tr>
 					<td>{{ $x++ }}</td>
-					<td>{{ $matakuliah->title or 'Nama kosong' }}</td>
-					<td>{{ $matakuliah->keterangan or 'Keterangan kosong' }}</td>
+					<td>{{ $matakuliah->title or 'title kosong' }}</td>
+					<td>{{ $matakuliah->keterangan or 'keterangan kosong' }}</td>
 				
 					<td>
 						<div class="btn-group" role="group">

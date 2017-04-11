@@ -7,9 +7,9 @@
 	</div>
 	<table class="table">
 			<tr>
-				<td>Nomor</td>
+				<td>Title</td>
 				<td>:</td>
-				<td>{{ $ruangan->Nomb }}</td>
+				<td>{{ $ruangan->title }}</td>
 			</tr>
 			<tr>
 				<td class="col-xs-4"> Dibuat tanggal</td>
@@ -17,6 +17,7 @@
 				<td>{{ $ruangan->created_at }}</td>
 			</tr>
 			<tr>
+			<td class="col-xs-4"> Tanggal Update</td>
 				<td class="col-xs-1">:</td>
 				<td>{{ $ruangan->updated_at }}</td>
 			</tr>
